@@ -8,14 +8,8 @@ const GoogleMapView = () => {
   return (
     <View>
       <MapView
-        style={{
-          width:Dimensions.get('screen').width*0.89,
-          height:Dimensions.get('screen').height*0.23,
-          borderRadius:20
-        }}
-      >
-
-      </MapView>
+        style={{ width: Dimensions.get('window').width, height: Dimensions.get('window').height }}
+      />
     </View>
   )
 }
